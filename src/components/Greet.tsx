@@ -1,9 +1,11 @@
-import React from 'react'
+type GreetProps={
+    name:string
+}
 
-const Greet = () => {
+const Greet = (props:GreetProps) => {
   return (
     <div>
-        <h2>welcome back ayo</h2>
+        <h2>welcome back {props.name}</h2>
     </div>
   )
 }
